@@ -21,6 +21,12 @@ pipeline {
           }
         }
 
+        stage('test3') {
+          steps {
+            sh 'echo test3'
+          }
+        }
+        
       }
     }
 
