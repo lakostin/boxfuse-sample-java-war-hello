@@ -13,7 +13,7 @@ void init_ssh(String ssh_key)
 
 pipeline {
   agent {
-      label 'master'
+      label 'slave'
   }
   stages {
     stage('Cloning Git') {
