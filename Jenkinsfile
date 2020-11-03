@@ -1,4 +1,3 @@
-git_url = 'https://github.com/terrestris/docker-tomcat'
 void init_ssh(String ssh_key)
 {
     echo "Configure ssh"
@@ -16,12 +15,6 @@ pipeline {
       label 'slave'
   }
   stages {
-    stage('Cloning Git') {
-      steps {
-        git branch: 'master',
-        url: git_url
-      }
-    }
     stage('Building image') {
       steps{
         script {
